@@ -1,0 +1,11 @@
+{
+  "name": "oraclechat",
+  "version": "1.0.0",
+  "description": "Open source chat api, made with react by default",
+  "scripts": {
+    "set-up-mac": "",
+    "set-up-win" : ""
+  },
+  "author": "Fernando Camblor",
+  "license": "ISC"
+}
