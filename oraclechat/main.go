@@ -1,8 +1,8 @@
 package main
 
 import (
-	"./rooms"
-	"./web"
+	"oraclechat/rooms"
+	"oraclechat/web"
 )
 
 func main() {
@@ -13,5 +13,5 @@ func main() {
 	web.InitRoutes(chatRooms)
 
 	// Start the web server
-	web.StartServer()
+	go web.StartServer()
 }

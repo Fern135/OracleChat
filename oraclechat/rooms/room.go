@@ -1,6 +1,6 @@
 package rooms
 
-import "../chat"
+import "oraclechat/chat"
 
 // Room represents a chat room.
 type Room struct {
@@ -10,7 +10,8 @@ type Room struct {
 }
 
 const (
-	maxOccupants = 20
+	maxOccupants    = 20
+	defaultRoomName = "My Room"
 )
 
 // chatRooms holds the list of chat rooms.
@@ -40,4 +41,10 @@ func JoinRoom(roomName, participantName string) bool {
 		return true
 	}
 	return false
+}
+
+func InitRooms() {
+	go func() {
+		chatRooms = append(chatRooms, Room{Name: defaultRoomName})
+	}()
 }
