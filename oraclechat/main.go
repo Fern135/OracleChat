@@ -7,10 +7,10 @@ import (
 
 func main() {
 	// Create and initialize chat rooms
-	chatRooms := rooms.InitRooms()
+	rooms.InitRooms()
 
 	// Define routes and handlers
-	web.InitRoutes(chatRooms)
+	web.InitRoutes()
 
 	// Start the web server
 	go web.StartServer()

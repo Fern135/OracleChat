@@ -18,7 +18,14 @@ if ! command -v node &> /dev/null; then
 fi
 
 echo "Golang and Node.js are installed."
+go version
 
+# * test if this isn't installed on the machine 
+# go get -u github.com/go-sql-driver/mysql
+
+# running api
+cd ../../oraclechat
+go run main.go
 
 # check if go os installed
 # if not install it

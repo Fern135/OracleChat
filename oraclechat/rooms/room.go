@@ -11,6 +11,7 @@ type Room struct {
 
 const (
 	maxOccupants    = 20
+	maxRooms        = 5
 	defaultRoomName = "My Room"
 )
 
@@ -44,7 +45,5 @@ func JoinRoom(roomName, participantName string) bool {
 }
 
 func InitRooms() {
-	go func() {
-		chatRooms = append(chatRooms, Room{Name: defaultRoomName})
-	}()
+	chatRooms = append(chatRooms, Room{Name: defaultRoomName})
 }

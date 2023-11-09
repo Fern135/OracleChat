@@ -4,9 +4,8 @@ import (
 	"net/http"
 )
 
-func InitRoutes()
-
-func StartServer() {
+// init routes and handlers
+func InitRoutes() {
 	http.HandleFunc("/", HomeHandler)
 	http.HandleFunc("/rooms/create", CreateRoomHandler)
 	http.HandleFunc("/rooms/join", JoinRoomHandler)
@@ -17,6 +16,10 @@ func StartServer() {
 	//http.HandleFunc("/forgot/password", forgotPassword)
 
 	// Replace ":8080" with your desired server address.
+}
+
+func StartServer() {
+
 	addr := ":8080"
 	server := &http.Server{
 		Addr: addr,
