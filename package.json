@@ -6,10 +6,5 @@
     "set-up": "node -e \"require('child_process').exec('python ./setup/setup.py', (error, stdout, stderr) => { if (error) { console.error(error); } console.log(stdout); });\""
   },
   "author": "Fernando Camblor",
-  "license": "ISC",
-  "dependencies": {
-    "bootstrap": "^5.3.2",
-    "node-sass": "^9.0.0",
-    "react-router-dom": "^6.18.0"
-  }
+  "license": "ISC"
 }

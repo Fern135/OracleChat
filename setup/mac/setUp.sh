@@ -22,6 +22,8 @@ go version
 
 # * test if this isn't installed on the machine 
 # go get -u github.com/go-sql-driver/mysql
+# go get -u github.com/joho/godotenv
+
 
 # running api
 cd ../../oraclechat/

@@ -1,20 +1,21 @@
-// import logo from './logo.svg';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './Global.scss';
+
+import Home from './components/home/component/Home';
 
 function App() {
   return (
     <Router>
       <div>
-        <Switch>
-          {/* <Route path="/" exact   omponent={ } /> */}
-          {/* <Route path="/about"    component={About} /> */}
-          {/* <Route path="/contact"  component={Contact} /> */}
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          {/* <Route path='/about' element={  } /> */}
+          {/* <Route path='/contact' element={  } /> */}
+        </Routes>
       </div>
     </Router>
   );
 }
-
 
 export default App;

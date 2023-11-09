@@ -3,18 +3,20 @@ package database
 import (
 	"database/sql"
 	"log"
+	"os"
 
 	_ "github.com/go-sql-driver/mysql"
+	_ "github.com/joho/godotenv"
 	// "database/sql" // research
 )
 
 // todo: move to .env
-const (
-	username = ""
-	password = ""
-	host     = "127.0.0.1"
-	port     = "3306"
-	dbname   = "OracleChat"
+var (
+	username = os.Getenv("username")
+	password = os.Getenv("password")
+	host     = os.Getenv("host")
+	port     = os.Getenv("port")
+	dbname   = os.Getenv("dbname")
 )
 
 func init() {
@@ -45,6 +47,7 @@ func init() {
 	// 	username VARCHAR(50),
 	// 	email VARCHAR(100)
 	// );`
+
 	// safeExecuteSQL(db, createTableSQL)
 
 	// insertDataSQL := "INSERT INTO users (username, email) VALUES (?, ?)"
@@ -88,7 +91,6 @@ func safeExecuteSQL(db *sql.DB, sql string, args ...interface{}) bool {
 	}
 
 	return true
-	// fmt.Println("SQL query executed successfully.")
 }
 
 func safeQueryData(db *sql.DB, sql string, args ...interface{}) (*sql.Rows, error) {
