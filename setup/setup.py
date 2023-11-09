@@ -2,15 +2,8 @@ import platform
 import subprocess
 
 def run(command):
-    result = subprocess.run(command, shell=True, text=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-
-    if result.returncode == 0:
-        print("Command output:")
-        print(result.stdout)
-
-    else:
-        print("Command failed with the following error:")
-        print(result.stderr)
+    # text=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE
+    subprocess.call(command, shell=True)
 
 def setUp():
     os_name = platform.system()

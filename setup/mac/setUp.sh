@@ -24,7 +24,7 @@ go version
 # go get -u github.com/go-sql-driver/mysql
 
 # running api
-cd ../../oraclechat
+cd ../../oraclechat/
 go run main.go
 
 # check if go os installed
