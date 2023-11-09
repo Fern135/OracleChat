@@ -1,2 +1,106 @@
 @import "../../../Global.scss";
 
+$mobile: 768px;
+$tablet: 1024px;
+$desktop: 1280px;
+
+#title-main-header:hover {
+    background-color: black;
+    color: white;
+}
+
+#title-main-header,
+#title-main-header-wrapper{
+    width: 100%;
+    height: auto;
+    font-size: 35px;
+    text-align: center;
+}
+
+// real time messaging
+.real-time-msg{
+    margin-right: 700px;
+    margin-left: auto;
+}
+
+// user friendly
+.user-friendly{
+    margin-left: 700px;
+    margin-right: auto;
+
+}
+
+// privacy and security
+.private-secure {
+    margin-right: 700px;
+    margin-left: auto;
+}
+
+// background images
+.privacy-security-wrapper{
+    background-image: url('./photos/security_v2.jpeg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+
+    padding-top: 10px;
+    display: flex;
+    
+    width: 100%;
+    height: auto;
+}
+
+.user-friendly-wrapper{
+    background-image: url('./photos/user_friendly_v2.jpeg');
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    
+    width: 100%;
+    height: auto;
+}
+
+
+// background images
+
+
+// Apply styles for different screen sizes
+body {
+  font-size: 16px;
+  
+  @media screen and (max-width: $mobile) {
+    font-size: 14px;
+
+    // background colors
+    .user-friendly-wrapper{
+        background-size: cover;
+    }
+
+    .real-time-msg,
+    .user-friendly,
+    .private-secure {
+        margin-top: 25px;
+        margin-left: auto;
+        margin-right: auto;
+    
+        margin-bottom: 10px;
+    }
+
+    #title-main-header-wrapper{
+        width: 100%;
+        height: auto;
+    }
+
+  }
+  
+  @media screen and (min-width: $tablet) {
+    font-size: 18px;
+
+    .real-time-msg {
+        width: auto;
+        height: auto;
+    }
+  }
+  
+  @media screen and (min-width: $desktop) {
+    font-size: 20px;
+  }
+}
