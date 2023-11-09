@@ -3,8 +3,13 @@
   "version": "1.0.0",
   "description": "Open source chat api made with golang, made with react by default",
   "scripts": {
-    "set-up": "node -e \"require('child_process').exec('python ./setup/setup.py', (error, stdout, stderr) => { if (error) { console.error(error); } console.log(stdout); });\""  
+    "set-up": "node -e \"require('child_process').exec('python ./setup/setup.py', (error, stdout, stderr) => { if (error) { console.error(error); } console.log(stdout); });\""
   },
   "author": "Fernando Camblor",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "node-sass": "^9.0.0",
+    "react-router-dom": "^6.18.0"
+  }
 }

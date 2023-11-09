@@ -1,0 +1,14 @@
+
+- oraclechat/
+    ├── main.go
+    ├── chat/
+    │   ├── chat.go √
+    ├── web/
+    │   ├── server.go √
+    │   ├── routes.go √
+    └── rooms/
+        ├── room.go √
+
+
+- public/
+    
