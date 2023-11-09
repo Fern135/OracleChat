@@ -17,6 +17,9 @@ func CreateMessage(message, room string) {
 	chatMessages = append(chatMessages, msg)
 }
 
+// todo: every few seconds the messages will be saved into db
+// todo: which include in which room, who wrote it, with time / date
+
 func GetMessages(room string) []Message {
 	var roomMessages []Message
 	for _, msg := range chatMessages {
