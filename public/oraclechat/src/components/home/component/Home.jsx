@@ -1,5 +1,5 @@
 import React, {
-    useEffect
+    // useEffect
 } from 'react';
 import "../style/home.scss";
 
@@ -22,10 +22,12 @@ function Home(){
                     </h1>
                 </div>
 
-                {/* real time messaging */}
-                <div className="container border rounded-sm text-left">
+                <br />
 
-                    <div className="card  real-time-msg">
+                {/* real time messaging */}
+                <div className="container border rounded-sm text-left real-time-msg-wrapper">
+
+                    <div className="card real-time-msg">
                         <div className="card-header">
                             <h5>
                                 Real-Time Messaging:

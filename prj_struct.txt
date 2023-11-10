@@ -11,4 +11,6 @@
 
 
 - public/
-    
+    react home and messaging application
+
+when request free demo. use linode aka akamai
