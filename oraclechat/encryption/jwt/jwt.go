@@ -13,10 +13,13 @@ import (
 )
 
 // Replace these with your own secret values in a production environment
-const secretKey = os.Getenv("secret_key")
+var (
+	secretKey = os.Getenv("secret_key")
+)
 
 type CustomClaims struct {
 	Username string `json:"username"`
+	Email    string `json:"email"`
 }
 
 func init() {
@@ -27,11 +30,13 @@ func init() {
 
 }
 
+// usage
 func main() {
-	payload := CustomClaims{Username: "exampleUser"}
+	payload := CustomClaims{
+		Username: "exampleUser", Email: "email@email.com",
+	}
 
 	token, err := createJWT(payload)
-
 	if err != nil {
 		fmt.Println("Error creating JWT:", err)
 		return
@@ -40,6 +45,7 @@ func main() {
 	fmt.Println("Generated JWT token:", token)
 
 	decodedPayload, err := verifyJWT(token)
+
 	if err != nil {
 		fmt.Println("Invalid token")
 		return

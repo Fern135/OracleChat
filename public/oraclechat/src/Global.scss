@@ -10,6 +10,38 @@
   pointer-events: none;
 }
 
+.size-lg{
+  font-size: large;
+}
+
+.size-xlg {
+  font-size: x-large;
+}
+
+.size-xxl {
+  font-size: xx-large;
+}
+
+.size-sm {
+  font-size: small;
+}
+
+.size-smaller{
+  font-size: smaller;
+}
+
+.size-xsm {
+  font-size: x-small;
+}
+
+.size-xxsm{
+  font-size: xx-small;
+}
+
+.size-md{
+  font-size: medium;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

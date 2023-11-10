@@ -3,6 +3,8 @@ import React, {
 } from 'react';
 import "../style/home.scss";
 
+import Footer from '../../global/footer/component/Footer';
+
 function Home(){
     
     // useEffect(() => {
@@ -78,6 +80,12 @@ function Home(){
                             </h6>
                         </div>
                     </div>
+                </div>
+
+
+
+                <div className="container-fluid">
+                    <Footer />
                 </div>
 
             </div>
