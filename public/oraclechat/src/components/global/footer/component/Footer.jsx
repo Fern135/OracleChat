@@ -11,7 +11,7 @@ function Footer(){
                 <footer className="footer-main-home">
                     
                     <div className="row">
-                        <div className="col-7 col-sm col-md">
+                        <div className="col col-sm col-md">
                             <h5>
                                 OracleChat
                             </h5>
@@ -40,7 +40,7 @@ function Footer(){
                             </h6>
                         </div>
 
-                        <div className="col-9 col-sm col-md">
+                        <div className="col col-sm-4 col-md-3">
                             <div className="row">
                                 <div className="col col-sm col-md">
                                     <h5>
@@ -48,16 +48,20 @@ function Footer(){
                                     </h5>
                                     <ul>
                                         <ul>
-                                            <li>
-                                                <a id="social-media-footer" href="https://www.linkedin.com/in/fernando-camblor-a85a88151/">
-                                                    <i className="fab fa-linkedin-in w-50 w-md-75 w-lg-100 size-xxl"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a id="social-media-footer" href="https://github.com/Fern135">
-                                                    <i className="fab fa-github w-50 w-md-75 w-lg-100 size-xxl"></i>
-                                                </a>
-                                            </li>
+                                            <ul>
+                                                <ul>
+                                                    <li>
+                                                        <a id="social-media-footer" href="https://www.linkedin.com/in/fernando-camblor-a85a88151/">
+                                                            <i className="fab fa-linkedin-in w-50 w-md-75 w-lg-100 size-xxl"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a id="social-media-footer" href="https://github.com/Fern135">
+                                                            <i className="fab fa-github w-50 w-md-75 w-lg-100 size-xxl"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </ul>
                                         </ul>
 
                                     </ul>

@@ -84,11 +84,12 @@ function Home(){
 
 
 
-                <div className="container-fluid">
-                    <Footer />
-                </div>
-
             </div>
+            
+            <div className="">
+                <Footer />
+            </div>
+
         </>
     );
 }
