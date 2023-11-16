@@ -1,6 +1,6 @@
 // bootstrap 5
 @import 'bootstrap/dist/css/bootstrap.css'; 
-
+@import "@fortawesome/fontawesome-free/css/all.css";
 
 // responsive
 $mobile: 768px;
@@ -8,6 +8,13 @@ $tablet: 1024px;
 $desktop: 1280px;
 // responsive
 
+// background images
+@mixin margin($top, $down, $left, $right){
+  margin-top: $top;
+  margin-bottom: $down;
+  margin-left: $left;
+  margin-right: $right;
+}
 
 // body {
 //   background-color: black;

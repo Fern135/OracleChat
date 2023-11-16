@@ -16,9 +16,10 @@ function Home(){
     
     return (
         <>
-            <div className="container-fluid">
+            <div className="main-background">
 
-                <div id='title-main-header-wrapper' className='bg-secondary'>
+                {/* id='title-main-header-wrapper' */}
+                <div id='itle-main-header-wrapper' className='bg-secondary'>
                     <h1 id='title-main-header' className='text-center bg-black text-white'>
                         OracleChat Project
                     </h1>
@@ -29,7 +30,7 @@ function Home(){
                 <div className='main-important-parts-wrapper'>
 
                     {/* real time messaging */}
-                    <div className="container-fluid border rounded-sm text-left real-time-msg-wrapper">
+                    <div className="container-fluid rounded-sm text-left real-time-msg-wrapper">
 
                         <div className="card real-time-msg">
                             <div className="card-header">
@@ -51,7 +52,7 @@ function Home(){
 
 
                     {/* user friendly */}
-                    <div className="container-fluid border rounded-sm text-right user-friendly-wrapper">
+                    <div className="container-fluid rounded-sm text-right user-friendly-wrapper">
                         <div className="card user-friendly">
                             <div className="card-header">
                                 <h5>
@@ -68,11 +69,11 @@ function Home(){
                     </div>
 
                     {/* privacy and security */}
-                    <div className="container-fluid border rounded-sm text-left privacy-security-wrapper">
+                    <div className="container-fluid rounded-sm text-left privacy-security-wrapper">
                         <div className="card private-secure">
                             <div className="card-header">
                                 <h5>
-                                    Privacy & Security:
+                                    Private & Secure:
                                 </h5>
                             </div>
                             <div className="card-body">
@@ -86,11 +87,11 @@ function Home(){
 
                 </div>
 
-            </div>
             
-            <div className="row">
-                <div className="col col-sm col-md">
-                    <Footer />
+                <div className="row">
+                    <div className="col col-sm col-md">
+                        <Footer />
+                    </div>
                 </div>
             </div>
 

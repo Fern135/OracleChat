@@ -39,28 +39,34 @@
     // margin-left: auto;
 }
 
-// background images
-.privacy-security-wrapper{
-    background-image: url('./photos/security_v2.jpeg');
-    background-size: cover; 
-    background-repeat: no-repeat; 
 
-    padding-top: 10px;
-    display: flex;
+
+// .align-right{
+//   text-align: right;
+// }
+
+// background images
+// .privacy-security-wrapper{
+//     background-image: url('./photos/security_v2.jpeg');
+//     background-size: cover; 
+//     background-repeat: no-repeat; 
+
+//     padding-top: 10px;
+//     display: flex;
     
-    width: 100%;
-    height: auto;
-}
+//     width: 100%;
+//     height: auto;
+// }
 
 // user friendly background image
-.user-friendly-wrapper{
-    background-image: url('./photos/user_friendly_v2.jpeg');
-    background-size: contain; 
-    background-repeat: no-repeat; 
+// .user-friendly-wrapper{
+//     background-image: url('./photos/user_friendly_v2.jpeg');
+//     background-size: contain; 
+//     background-repeat: no-repeat; 
     
-    width: 100%;
-    height: auto;
-}
+//     width: 100%;
+//     height: auto;
+// }
 
 // .real-time-msg-wrapper{
     // background-image: url('./photos/realtime_messaging_v2.jpg');
@@ -71,13 +77,48 @@
     height: auto;
 }
 
-// background images
-@mixin margin($top, $down, $left, $right){
-    margin-top: $top;
-    margin-bottom: $down;
-    margin-left: $left;
-    margin-right: $right;
+.main-background{
+    background-image: url("./photos/chat-pic-1-bg.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: auto;
 }
+
+// backgroung image slideshow 
+// todo: use this later. if not delete
+// $images: (
+//   "./photos/chat-pic-1-bg.jpeg",
+//   "./photos/chat-pic-2-bg.jpeg",
+//   "./photos/chat-pic-3-bg.jpeg",
+//   "./photos/chat-pic-4-bg.jpeg",
+//   "./photos/chat-pic-5-bg.jpeg",
+// );
+
+// $time_change: 5s;
+
+// .main-background {
+//   margin: 0;
+//   padding: 0;
+//   height: 100vh;
+//   overflow: hidden;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   background-size: cover;
+//   background-position: center;
+//   animation: changeImage #{$time_change} infinite;
+// }
+
+// @keyframes changeImage {
+//   @each $image in $images {
+//     to {
+//       background-image: url($image);
+//     }
+//   }
+// }
+
 
 // Apply styles for different screen sizes
 body {
