@@ -2,7 +2,7 @@ import React from "react";
 
 import "../style/contactemail.scss";
 
-const ContactEmail = () => {
+function ContactEmail(){
     return (
         <>  
             <div>
