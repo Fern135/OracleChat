@@ -16,3 +16,33 @@
     text-decoration: none;
 }
 
+.about-me-ul,
+.about-me-li{
+    width: 100%;
+    height: auto;
+}
+
+// Apply styles for different screen sizes
+body {
+    font-size: 16px;
+    
+    @media screen and (max-width: $mobile) {
+        font-size: 14px;
+        // .about-me-ul,
+        // .about-me-li{
+        //     width: 50%;
+        //     height: auto;
+
+        //     // font-size: smaller;
+        // }
+    }
+    
+    @media screen and (min-width: $tablet) {
+      font-size: 18px;
+        
+    }
+    
+    @media screen and (min-width: $desktop) {
+      font-size: 20px;
+    }
+  }

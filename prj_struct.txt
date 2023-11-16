@@ -14,7 +14,7 @@
     react home and messaging application
 
 
-- linodeAPI/
+- linodeAPI/ MAY NOT USE
     when request free demo. use linode aka akamai
 
     - routes/
