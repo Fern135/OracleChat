@@ -16,10 +16,16 @@ $desktop: 1280px;
   margin-right: $right;
 }
 
-// body {
-//   background-color: black;
-//   color: white;
-// }
+/* Custom styles to remove blue color and underline from links */
+a {
+  color: inherit; /* Use the default text color */
+  text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+  color: inherit; /* Maintain default text color on hover */
+  text-decoration: none; /* Remove underline on hover */
+}
 
 .App {
   text-align: center;

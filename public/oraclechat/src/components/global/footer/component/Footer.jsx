@@ -3,25 +3,43 @@ import React from 'react';
 
 import "../styles/footer.scss";
 
-function Footer(){
-
+function Footer({ info }){
   return (
     <footer className="bg-dark text-light p-4 mt-5">
       <div className="container">
         
         <div className="row">
           <div className="col-md-6 border">
-              <p className='border'> OracleChat Project</p>
-              <p className='border'>
-                Project started as a portfolio project.<br />Just decided to make it open source
-                while also providing a platform where all users can chat and more.
-                <br />
-                <a href="https://github.com/Fern135/OracleChat" target="_blank" rel="noopener noreferrer" className="text-light me-4">
-                  <i className="fab fa-github size-xlg"></i>
+              <p className='border'> 
+                <a href="/">
+                  OracleChat Project
                 </a>
+              </p>
+              <p className='border'>
+                { info }
+
+                <br />
+
+                <div className="btn-group">
+
+                  <a href="https://github.com/Fern135/OracleChat" target="_blank" rel="noopener noreferrer" className="text-light me-4">
+                    <i className="fab fa-github size-xlg"></i>
+                  </a>
+
+                  <a href="/" className='btn btn-primary'>
+                    <i class="fa-solid fa-house"></i>
+                  </a>
+
+                  <a href="/about" className='btn btn-info'>
+                    <i class="fa-solid fa-info"></i>
+                  </a>
+
+                </div>
+
               </p>
           </div>
 
+          {/* social media */}
           <div className="col-md-6 text-end">
             <a href="https://github.com/Fern135" target="_blank" rel="noopener noreferrer" className="text-light me-3">
               <i className="fab fa-github size-xlg"></i>

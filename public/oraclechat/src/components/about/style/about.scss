@@ -1,0 +1,31 @@
+@import "../../../Global.scss";
+
+@import "../../home/style/home.scss";
+
+.middle-screen{
+    height: 60vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-background-about{
+    background-image: url("../../home/style/photos/chat-pic-5-bg.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+    width: 100%;
+    height: auto;
+  
+    // parallax scrolling
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  

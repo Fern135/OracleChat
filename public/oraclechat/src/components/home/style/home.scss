@@ -15,109 +15,61 @@
 
 // real time messaging
 .real-time-msg{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 700px;
-    margin-left: auto;
+  // top down left right
+  @include margin(10px, 10px, auto, 700px);
 }
 
 // user friendly
 .user-friendly{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 700px;
-    margin-right: auto;
-
+  // top down left right
+  @include margin(10px, 10px, 700px, auto);
 }
 
 // privacy and security
 .private-secure {
-    margin-top: 10px;
-    margin-bottom: 10px;
-
-    margin-right: 700px;
-    // margin-left: auto;
+  // top down left right
+  @include margin(10px, 10px, auto, 700px);
 }
 
+// cross platform
+.cross-platform{
+  // top down left right
+  @include margin(10px, 10px, 700px, auto);
+}
 
-
-// .align-right{
-//   text-align: right;
+// .real-time-msg,
+// .user-friendly,
+// .private-secure,
+// .cross-platform{
 // }
 
-// background images
-// .privacy-security-wrapper{
-//     background-image: url('./photos/security_v2.jpeg');
-//     background-size: cover; 
-//     background-repeat: no-repeat; 
-
-//     padding-top: 10px;
-//     display: flex;
-    
-//     width: 100%;
-//     height: auto;
-// }
-
-// user friendly background image
-// .user-friendly-wrapper{
-//     background-image: url('./photos/user_friendly_v2.jpeg');
-//     background-size: contain; 
-//     background-repeat: no-repeat; 
-    
-//     width: 100%;
-//     height: auto;
-// }
-
-// .real-time-msg-wrapper{
-    // background-image: url('./photos/realtime_messaging_v2.jpg');
-// }
-
+// message cards describing oraclechat project
 .main-important-parts-wrapper{
     width: 100%;
     height: auto;
 }
 
+// speaks for itself
 .main-background{
-    background-image: url("./photos/chat-pic-1-bg.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url("./photos/chat-pic-1-bg.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
 
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
+
+  // parallax scrolling
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-// backgroung image slideshow 
-// todo: use this later. if not delete
-// $images: (
-//   "./photos/chat-pic-1-bg.jpeg",
-//   "./photos/chat-pic-2-bg.jpeg",
-//   "./photos/chat-pic-3-bg.jpeg",
-//   "./photos/chat-pic-4-bg.jpeg",
-//   "./photos/chat-pic-5-bg.jpeg",
-// );
 
-// $time_change: 5s;
-
-// .main-background {
-//   margin: 0;
-//   padding: 0;
-//   height: 100vh;
-//   overflow: hidden;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   background-size: cover;
-//   background-position: center;
-//   animation: changeImage #{$time_change} infinite;
-// }
-
-// @keyframes changeImage {
-//   @each $image in $images {
-//     to {
-//       background-image: url($image);
-//     }
-//   }
-// }
 
 
 // Apply styles for different screen sizes
@@ -134,13 +86,9 @@ body {
 
     .real-time-msg,
     .user-friendly,
-    .private-secure {
-        // margin-top: 25px;
-        // margin-left: auto;
-        // margin-right: auto;
-        // margin-bottom: 10px;
-
-        @include margin(25px, auto, auto, 10px)
+    .private-secure,
+    .cross-platform{
+      @include margin(25px, auto, auto, 10px)
     }
 
     #title-main-header-wrapper{
