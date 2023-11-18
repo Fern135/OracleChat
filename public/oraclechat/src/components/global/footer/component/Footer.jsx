@@ -5,16 +5,16 @@ import "../styles/footer.scss";
 
 function Footer({ info }){
   return (
-    <footer className="bg-dark text-light p-4 mt-5">
+    <footer className="bg-dark text-light p-5 mt-5">
       <div className="container">
         
         <div className="row">
           <div className="col-md-6 border">
-              <p className='border'> 
-                <a href="/">
+              <a href="/">
+                <p className='border'> 
                   OracleChat Project
-                </a>
-              </p>
+                </p>
+              </a>
               <p className='border'>
                 { info }
 
@@ -27,11 +27,11 @@ function Footer({ info }){
                   </a>
 
                   <a href="/" className='btn btn-primary'>
-                    <i class="fa-solid fa-house"></i>
+                    <i className="fa-solid fa-house"></i>
                   </a>
 
                   <a href="/about" className='btn btn-info'>
-                    <i class="fa-solid fa-info"></i>
+                    <i className="fa-solid fa-info"></i>
                   </a>
 
                 </div>

@@ -22,7 +22,9 @@ function Home(){
                     {/* id='title-main-header-wrapper' */}
                     <div id='itle-main-header-wrapper' className='bg-secondary'>
                         <h1 id='title-main-header' className='text-center bg-black text-white'>
-                            OracleChat Project
+                            <a href="/">
+                                OracleChat Project
+                            </a>
                         </h1>
                     </div>
 

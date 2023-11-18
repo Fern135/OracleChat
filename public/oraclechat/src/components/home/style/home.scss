@@ -9,7 +9,7 @@
 #title-main-header-wrapper{
     width: 100%;
     height: auto;
-    font-size: 35px;
+    // font-size: 35px;
     text-align: center;
 }
 
@@ -60,16 +60,14 @@
 
   // parallax scrolling
   /* Set a specific height */
-  min-height: 500px;
+  // min-height: 500px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-position:   center;
+  background-repeat:     no-repeat;
+  background-size:       cover;
 }
-
-
 
 
 // Apply styles for different screen sizes
@@ -81,19 +79,20 @@ body {
 
     // background colors
     .user-friendly-wrapper{
-        background-size: cover;
+      background-size: cover;
     }
 
     .real-time-msg,
     .user-friendly,
     .private-secure,
     .cross-platform{
-      @include margin(25px, auto, auto, 10px)
+      // top down left right
+      @include margin(20px, auto, auto, 10px)
     }
 
     #title-main-header-wrapper{
-        width: 100%;
-        height: auto;
+      width: 100%;
+      height: auto;
     }
 
   }
@@ -101,10 +100,13 @@ body {
   @media screen and (min-width: $tablet) {
     font-size: 18px;
 
-    .real-time-msg {
-        width: auto;
-        height: auto;
-    }
+    // .real-time-msg,
+    // .user-friendly,
+    // .private-secure,
+    // .cross-platform{
+    //   // top down left right
+    //   @include margin(20px, auto, auto, 10px)
+    // }
     
   }
   

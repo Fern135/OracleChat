@@ -28,4 +28,52 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-  
+ 
+body {
+    font-size: 16px;
+    
+    @media screen and (max-width: $mobile) {
+        font-size: 14px;
+        // .about-me-ul,
+        // .about-me-li{
+        //     width: 50%;
+        //     height: auto;
+
+        //     // font-size: smaller;
+        // }
+
+        // footer for the about
+        .footer-about{
+            margin-top: 60px;
+        }
+        
+        // about the project card
+        .card
+        {
+            width: 100%;
+            height: auto;
+
+            margin-top: 70px;
+            // margin-bottom: -40px;
+        }
+    }
+    
+    @media screen and (min-width: $tablet) {
+      font-size: 18px;
+
+      .main-background-about{
+        padding-bottom: 100%;
+      }
+
+      .about-project-description{
+        font-size: xx-large;
+        width: 100%;
+        height: auto;
+      }
+        
+    }
+    
+    @media screen and (min-width: $desktop) {
+      font-size: 20px;
+    }
+  }

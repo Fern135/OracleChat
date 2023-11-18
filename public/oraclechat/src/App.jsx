@@ -8,13 +8,11 @@ import About from './components/about/component/About';
 function App() {
   return (
     <Router>
-      <div>
-        <Routes>
-          <Route path="/"       element={ <Home />} />
-          <Route path='/about'  element={ <About /> } />
-          {/* <Route path='/contact' element={  } /> */}
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/"       element={ <Home />} />
+        <Route path='/about'  element={ <About /> } />
+        {/* <Route path='/contact' element={  } /> */}
+      </Routes>
     </Router>
   );
 }
