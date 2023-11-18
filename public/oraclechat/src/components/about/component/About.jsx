@@ -30,7 +30,7 @@ function About(){
 
                             <div className="card text-center">
                                 <div className="card-header">
-                                    <h5>
+                                    <h5 className="about-project-header">
                                         About Project
                                     </h5>
                                 </div>

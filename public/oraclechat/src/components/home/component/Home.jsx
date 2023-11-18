@@ -1,5 +1,5 @@
 import React, {
-    // useEffect,
+    useEffect,
     // useRef
 } from 'react';
 import "../style/home.scss";
@@ -8,12 +8,12 @@ import Footer from '../../global/footer/component/Footer';
 
 function Home(){
 
-    // useEffect(() => {
-    
-    //   return () => {
-        // Cleanup: remove the event listener when the component unmounts
-    //   };
-    // }, []);
+    useEffect(() => {
+
+        console.log("testing")
+
+    }, []);
+
     return (
         <>
             <div className="main-background">
