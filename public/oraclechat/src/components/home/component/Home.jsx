@@ -10,9 +10,14 @@ function Home(){
 
     useEffect(() => {
 
-        console.log("testing")
+        // use effect here
+    
+        return () => {
+            console.log("+1");
+        }   
 
-    }, []);
+    }, [])
+    
 
     return (
         <>
