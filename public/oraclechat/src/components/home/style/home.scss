@@ -16,25 +16,25 @@
 // real time messaging
 .real-time-msg{
   // top down left right
-  @include margin(10px, 10px, auto, 700px);
+  @include margin(10px, 10px, auto, 750px);
 }
 
 // user friendly
 .user-friendly{
   // top down left right
-  @include margin(10px, 10px, 700px, auto);
+  @include margin(10px, 10px, 750px, auto);
 }
 
 // privacy and security
 .private-secure {
   // top down left right
-  @include margin(10px, 10px, auto, 700px);
+  @include margin(10px, 10px, auto, 750px);
 }
 
 // cross platform
 .cross-platform{
   // top down left right
-  @include margin(10px, 10px, 700px, auto);
+  @include margin(10px, 10px, 750px, auto);
 }
 
 // .real-time-msg,
@@ -45,8 +45,11 @@
 
 // message cards describing oraclechat project
 .main-important-parts-wrapper{
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
+
+  // top down left right
+  @include Padding(auto, auto, 10px, 10px);
 }
 
 // speaks for itself

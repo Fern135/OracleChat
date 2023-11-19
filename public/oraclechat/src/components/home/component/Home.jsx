@@ -21,7 +21,7 @@ function Home(){
 
     return (
         <>
-            <div className="main-background">
+            <div className="main-background container-fluid">
                 <div className="parallax-content">
 
                     {/* id='title-main-header-wrapper' */}
@@ -86,8 +86,8 @@ function Home(){
                                 </div>
                                 <div className="card-body">
                                     <h6>
-                                    We prioritize your privacy and ensure end-to-end encryption, <br />
-                                    making OracleChat a secure platform for your conversations.
+                                        We prioritize your privacy and ensure end-to-end encryption, <br />
+                                        making OracleChat a secure platform for your conversations.
                                     </h6>
                                 </div>
                             </div>

@@ -9,12 +9,20 @@ $tablet:     1024px;
 $desktop:    1280px;
 // responsive
 
-// background images
+// top down left right
 @mixin margin($top, $down, $left, $right){
   margin-top: $top;
   margin-bottom: $down;
   margin-left: $left;
   margin-right: $right;
+}
+
+// top down left right
+@mixin Padding($top, $down, $left, $right){
+  padding-top: $top;
+  padding-bottom: $down;
+  padding-left: $left;
+  padding-right: $right;
 }
 
 * {
